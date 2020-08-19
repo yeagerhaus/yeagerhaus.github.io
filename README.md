@@ -1,6 +1,8 @@
 Hello!
 
-Welcome to my github.io website!  I built this site as a portfolio and online resume to reflect my skills and experience as a Full Stack Developer!  A PDF version of my resume is available to download from the site using the link "Resume Download".  You can view my website at the link below!
+Welcome to my github.io website!  I built this site as a portfolio and online resume to reflect my skills and experience as a Full Stack Developer!  A PDF version of my resume is available to download from the site using the "Resume" link.  
+
+You can view my full website at the link below!
 
 https://yeagerhaus.github.io/
 
