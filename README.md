@@ -6,4 +6,4 @@ https://yeagerhaus.github.io/
 
 Thanks for checking me out! Enjoy!
 
-- Cole Yeager
+Cole Yeager
