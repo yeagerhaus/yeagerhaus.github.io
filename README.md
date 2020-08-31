@@ -4,6 +4,8 @@ Welcome to my github.io website!  I built this site as a portfolio and online re
 
 View the site here: https://yeagerhaus.github.io/
 
+If you'd like to see what else I've been up to, feel free to poke around my GitHub!
+
 Thanks for checking me out! Enjoy!
 
 Cole Yeager
