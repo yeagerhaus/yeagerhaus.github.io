@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +33,37 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/** BEGIN REAL CSS **/
+
+.Moving-bg {
+  height: 100vh;
+   background: linear-gradient(62deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+     animation: gradient 8s ease infinite; 
+      background-size: 400% 400%;
+  
+}
+@-webkit-keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+@keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
   }
 }
