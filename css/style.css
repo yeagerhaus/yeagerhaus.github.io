@@ -194,7 +194,7 @@ body {
 
 .hero-name {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2.8rem, 9vw, 7.5rem);
+  font-size: clamp(2.2rem, 9vw, 7.5rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1;
