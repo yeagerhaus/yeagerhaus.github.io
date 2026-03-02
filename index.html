@@ -1,70 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content="Yeagerhaus Github.io Website"/>
-    <meta name="author" content="Yeagerhaus"/>
-    <title>Yeagerhaus | Software Developer</title>
-    <link rel="icon" type="image/x-icon" href="/oldsite/assets/img/favicon.ico"/>
-    <!-- CSS -->
-    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177786611-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-177786611-1');
-    </script>
-    <style>
-        /* Center the content vertically and horizontally */
-        body {
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Cole Yeager — Software Engineer, Musician, Creator. Yeagerhaus."/>
+  <meta name="author" content="Cole Yeager"/>
+  <title>Cole Yeager | Yeagerhaus</title>
 
-        /* Style the message */
-        .message {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; /* Center horizontally */
-            text-align: center;
-            font-size: 24px;
-            color: #9300ff;
-            font-family: 'Montserrat', sans-serif;
-        }
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico"/>
 
-        /* Style the loading spinner */
-        .spinner {
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid #9300ff; /* Change the color as needed */
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin-top: 20px;
-        }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/style.css"/>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177786611-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-177786611-1');
+  </script>
 </head>
 <body>
-    <div class="message">
-        <p>This site is currently under maintenance, please check back later</p>
-        <div class="spinner"></div>
+
+  <!-- Ambient orbs — fixed, bleed through glass panels -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <!-- ── Floating glass nav ──────────────────────────────────────────────── -->
+  <nav class="glass-nav" aria-label="Site navigation">
+    <a href="#hero" class="nav-brand" aria-label="Home">CY</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#engineering">Engineering</a>
+      <a href="#work">Work</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
     </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-panel glass">
+      <h1 class="hero-name">
+        <span class="hero-line">COLE</span>
+        <span class="hero-line">YEAGER</span>
+      </h1>
+
+      <p class="hero-brand">Yeagerhaus</p>
+
+      <div class="hero-tags" aria-label="Disciplines">
+        <span class="hero-tag">Engineer</span>
+        <span class="hero-tag">Musician</span>
+        <span class="hero-tag">Creator</span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 9L12 15L18 9" stroke="rgba(147,0,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════════════════════════════════════════ -->
+  <section id="about">
+    <span class="section-label" data-scramble="ABOUT">ABOUT</span>
+
+    <div class="about-grid glass reveal">
+      <div class="about-bio">
+        <p class="lead">Full-stack developer, drummer, guitarist, and music producer.</p>
+        <p>
+            I'm a software engineer from St. Helena, California. I build apps,
+            write heavy music, and think a lot about how things feel - in your
+            hands, in your headphones, or on your screen. I'm drawn to systems,
+            sound, and the space where engineering meets taste.
+            Currently crafting mobile experiences at
+            <a href="https://aiq.com" target="_blank" rel="noopener" class="inline-link">AIQ</a>.
+        </p>
+      </div>
+
+      <div class="headshot-wrap">
+        <img src="/assets/img/headshot.png" alt="Cole Yeager" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       ENGINEERING
+  ════════════════════════════════════════════════════════════════════════════ -->
+  <section id="engineering">
+    <span class="section-label" data-scramble="ENGINEERING">ENGINEERING</span>
+
+    <div class="skill-grid" aria-label="Skills">
+        <span class="skill-pill">Typescript</span>
+        <span class="skill-pill">React Native</span>
+        <span class="skill-pill">React JS</span>
+        <span class="skill-pill">Go</span>
+        <span class="skill-pill">WordPress</span>
+        <span class="skill-pill">Node.js</span>
+        <span class="skill-pill">Meteor.js</span>
+    </div>
+
+    <div class="job-card glass reveal">
+      <div class="job-company">AIQ &middot; Nov 2021 &ndash; Present</div>
+      <div class="job-title">Senior Software Engineer</div>
+      <p class="job-desc">
+        Building cross-platform applications for industry analytics,
+        customer loyalty, and user engagement. High-performance UI and seamless UX across web, iOS and Android.
+      </p>
+    </div>
+
+    <div class="btn-wrap">
+      <a href="/assets/pdf/CYRESUME.pdf"
+         class="btn-primary magnetic"
+         target="_blank"
+         rel="noopener"
+         aria-label="Open resume PDF">
+        Resume ↓
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       WORK — Product Gallery
+  ════════════════════════════════════════════════════════════════════════════ -->
+  <section id="work">
+    <span class="section-label" data-scramble="WORK">WORK</span>
+
+    <div class="work-grid">
+
+      <!-- NuVibe — wide (spans 2 cols) -->
+      <a href="#" class="work-card glass reveal work-card--wide"
+         target="_blank" rel="noopener" aria-label="NuVibe project">
+        <div class="work-card-media"
+             style="--card-gradient: linear-gradient(135deg, #1c0038 0%, #7200d4 70%, #9b00e8 100%)">
+          <img src="/assets/img/firespringLogo.png" alt="Firespring" class="work-logo"/>
+        </div>
+        <div class="work-card-body">
+          <div class="work-card-meta">
+            <span class="work-tag">WordPress Developer</span>
+            <span class="work-year">2021</span>
+          </div>
+          <h3 class="work-title">Firespring</h3>
+          <p class="work-desc">Built accessible, client-specific WordPress experiences through bespoke theme development and custom PHP plugins. Helped businesses modernize their storefronts with sleek, ADA-compliant, user-friendly designs</p>
+        </div>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <!-- Volitant -->
+      <a href="#" class="work-card glass reveal"
+         target="_blank" rel="noopener" aria-label="Volitant project">
+        <div class="work-card-media"
+             style="--card-gradient: linear-gradient(145deg, #001535 0%, #0044bb 100%)">
+          <img src="/assets/img/slGreenLogo.png" alt="Volitant" class="work-logo"/>
+        </div>
+        <div class="work-card-body">
+          <div class="work-card-meta">
+            <span class="work-tag">Web Developer</span>
+            <span class="work-year">2021 &ndash; 2022</span>
+          </div>
+          <h3 class="work-title">SL Green Realty</h3>
+          <p class="work-desc">Built, maintain and enhanced the company websites</p>
+        </div>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <!-- Motionize -->
+      <a href="#" class="work-card glass reveal"
+         target="_blank" rel="noopener" aria-label="Motionize project">
+        <div class="work-card-media"
+             style="--card-gradient: linear-gradient(145deg, #001c22 0%, #006680 100%)">
+          <img src="/assets/img/motionizeLogo.png" alt="Motionize" class="work-logo"/>
+        </div>
+        <div class="work-card-body">
+          <div class="work-card-meta">
+            <span class="work-tag">UI Engineering</span>
+            <span class="work-year">2020 &ndash; 2021</span>
+          </div>
+          <h3 class="work-title">Motionize</h3>
+          <p class="work-desc">Worked across the stack to support feature development on the Motionize web application. Helped maintain and enhance the company website</p>
+        </div>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <!-- HitSend — wide (spans 2 cols) -->
+      <a href="#" class="work-card glass reveal work-card--wide"
+         target="_blank" rel="noopener" aria-label="HitSend project">
+        <div class="work-card-media"
+             style="--card-gradient: linear-gradient(135deg, #22002e 0%, #8800bb 60%, #cc0077 100%)">
+          <img src="/assets/img/hitSendLogo.png" alt="HitSend" class="work-logo"/>
+        </div>
+        <div class="work-card-body">
+          <div class="work-card-meta">
+            <span class="work-tag">Frontend Engineer</span>
+          </div>
+          <h3 class="work-title">HitSend.io</h3>
+          <p class="work-desc">Contributed to the frontend architecture of HitSend’s web platform, building interactive audio review tools and feedback systems. Implemented responsive, performance-conscious UI components supporting high-resolution playback, version control workflows, and integrated payment gating</p>
+        </div>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       MUSIC
+  ════════════════════════════════════════════════════════════════════════════ -->
+  <section id="music">
+    <span class="section-label" data-scramble="MUSIC">MUSIC</span>
+
+    <div class="music-cards">
+      <div class="music-card glass reveal">
+        <div class="music-card-title">Performer</div>
+        <p class="music-card-sub">
+          Drums &middot; Guitar<br>
+          Live performance, session work, collaborative projects.
+        </p>
+        <div class="waveform" aria-hidden="true">
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+        </div>
+      </div>
+
+      <div class="music-card glass reveal">
+        <div class="music-card-title">Producer</div>
+        <p class="music-card-sub">
+          Write &middot; Mix &middot; Master<br>
+          Original compositions, production, and sound design.
+        </p>
+        <div class="vu-meter" aria-hidden="true">
+          <div class="vu-bar"></div>
+          <div class="vu-bar"></div>
+          <div class="vu-bar"></div>
+          <div class="vu-bar"></div>
+          <div class="vu-bar"></div>
+          <div class="vu-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Platform icon buttons (fill URLs when ready) -->
+    <div class="platform-links">
+      <a href="#" class="platform-link" aria-label="SoundCloud" title="SoundCloud">
+        <i class="fa-brands fa-soundcloud"></i>
+      </a>
+      <a href="#" class="platform-link" aria-label="Spotify" title="Spotify">
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+      <a href="#" class="platform-link" aria-label="Apple Music" title="Apple Music">
+        <i class="fa-brands fa-apple"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════════════════════════════════════════ -->
+  <section id="contact">
+    <span class="section-label" data-scramble="CONTACT">CONTACT</span>
+
+    <a href="mailto:designedbyyeager@gmail.com" class="contact-email reveal">
+      designedbyyeager@gmail.com
+    </a>
+
+    <div class="social-row" aria-label="Social links">
+      <a href="https://github.com/yeagerhaus"
+         class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/yeagerhaus/"
+         class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+
+    <a href="/assets/pdf/CYRESUME.pdf"
+       class="btn-primary magnetic"
+       download
+       aria-label="Download resume">
+      Resume ↓
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════════════════════ -->
+  <footer>
+    <span>&copy; Yeagerhaus <span id="footer-year"></span></span>
+  </footer>
+
+  <!-- Scripts — no Three.js needed anymore -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <script src="/js/main.js"></script>
+
 </body>
 </html>
